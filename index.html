@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="My Portfolio website" />
+  <meta name="keywords" content="web design, html, css, js" />
+  <title>Portfolio Website</title>
+
+  <link rel="stylesheet" href="styles/components/header.css">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/utils.css">
+
+
+  <link rel="stylesheet" href="styles/components/footer.css">
+  <link rel="stylesheet" href="styles/components/contact.css">
+  <link rel="stylesheet" href="styles/components/featured.css">
+  <link rel="stylesheet" href="styles/components/hero.css">
+  <link rel="stylesheet" href="styles/components/mobile-nav.css">
+  <link rel="stylesheet" href="styles/components/about.css">
+
+
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+
+        <li class="header__line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="#">Resume</a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="#">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation -->
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="/public/Capture.PNG" alt="Profile picture" />
+      <h2 class="hero__subtitle"></h2>
+      <h1 class="hero__title">
+        CAPED BALDY <br />
+
+      </h1>
+      <p class="hero__description">
+        Lorem ipsum<strong>Lorem ipsum dolor sit amet expedita quasi.</strong> Lorem ipsum and <strong>dolor</strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium quos nulla ea, tenetur itaque dolorum
+        exercitationem.
+      </p>
+      <a class="hero__btn btn" href="#">Reach out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">
+          Lorem ipsum
+          <strong>lorem ipsum</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus labore odio
+          veritatis, possimus minus animi eveniet itaque repellendus tempora nobis, nihil, impedit quidem.
+        </p>
+
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">JavaScript (ES6+)</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">HTML</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">VueJs</li>
+            <li class="about__list">PHP</li>
+            <li class="about__list">SQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img src="/public/capedbaldy.png" alt="">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Caped Baldy</h2>
+        <a aria-label="link featured projects" class="featured__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">
+        Cillum voluptate tempor cillum culpa cupidatat labore voluptate
+        ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
+        pariatur consectetur ullamco. Officia quis id velit duis cupidatat
+        sunt deserunt do aliquip nulla laboris.
+      </p>
+
+      <a class="contact__btn btn" href="#" target="_blank">React Out</a>
+    </section>
+  </main>
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Lore Ipsum ~</h3>
+  </footer>
+
+
+</body>
+
+</html>
